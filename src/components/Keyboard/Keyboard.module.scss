@@ -1,0 +1,25 @@
+.all-rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  .letter {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    background-color: #d3d6da;
+    color: black;
+    margin: 0 4px;
+    display: flex;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

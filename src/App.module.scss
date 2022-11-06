@@ -1,0 +1,11 @@
+.app {
+  text-align: center;
+  overflow: hidden;
+}
+
+.board__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

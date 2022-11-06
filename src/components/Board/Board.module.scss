@@ -1,0 +1,18 @@
+.board {
+  //   border: 1px solid black;
+  height: 320px;
+  width: 260px;
+  margin-top: 18px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 0.3rem;
+  row-gap: 0.3rem;
+}
+
+.keyboard {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
