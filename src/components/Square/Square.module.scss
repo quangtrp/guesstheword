@@ -9,3 +9,33 @@
 
   font-size: 2.4rem;
 }
+
+.correct {
+  background-color: #6bab64;
+  color: white;
+  border: none;
+  animation: flip 1s linear;
+}
+
+.almost {
+  background-color: #c9b559;
+  color: white;
+  border: none;
+  animation: flip 1s linear;
+}
+
+.wrong {
+  background-color: #787d7f;
+  color: white;
+  border: none;
+  animation: flip 1s linear;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
