@@ -17,9 +17,6 @@ const Key: React.FC<Iprops> = ({ letter }) => {
   const rowInStore = useSelector((state: rootState) => state.board.row);
   const currentRow = Math.floor(position / 5);
 
-  const correctWord = useSelector(
-    (state: rootState) => state.board.correctWord
-  );
   const inGame = useSelector((state: rootState) => state.board.inGame);
 
   const dispatch = useDispatch();

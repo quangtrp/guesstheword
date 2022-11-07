@@ -48,7 +48,7 @@ const Keyboard: React.FC = () => {
 
   const enterClick = () => {
     if (!allWords.includes(board5Words)) {
-      alert("Invalid word");
+      alert("Not In Word List");
     }
 
     if (allWords.includes(board5Words)) {
@@ -59,16 +59,19 @@ const Keyboard: React.FC = () => {
         dispatch(increaseRow());
 
         if (board5Words === correctWord.toLowerCase()) {
-          alert(`Congrat!! You guessed the correct word: ${correctWord}`);
+          alert(
+            `Congratulation!! You Guessed The Correct Word: ${correctWord}`
+          );
           dispatch(setInGame(false));
         }
       }
     }
-  };
 
-  if (position === 30 && allWords.includes(board5Words)) {
-    alert(`The correct word is ${correctWord}`);
-  }
+    if (position === 30 && board5Words !== correctWord.toLowerCase()) {
+      alert(`The Correct Word Is ${correctWord}. Try Again`);
+      dispatch(setInGame(false));
+    }
+  };
 
   return (
     <div>
